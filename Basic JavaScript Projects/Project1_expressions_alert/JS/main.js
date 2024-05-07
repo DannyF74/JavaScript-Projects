@@ -3,12 +3,12 @@ var A = "Testing apostrophies and quotes \' \" \\";
 alert(A);
 
 //created a variable and concatenated 4 string values.
-var B = "Testing concatenating variables..." + " Testing concatenating 1" + " Testing Concatenating 2" + " Testing Concatenating 3";
-document.write(B);
+var B = "Testing concatenating variables...\n" + " Testing concatenating 1 \n" + " Testing Concatenating 2 \n" + " Testing Concatenating 3\n";
+document.write(B + "<br><br>");
 
 //declared multiple variables on one line.
 var team="Portland Trail Blazers", center="Deandre Ayton", pg="Malcolm Brogdon", sf="Matisse Thybulle", pf="Jerami Grant";
-document.write(pf);
+document.write(pf + " " + pg + "<br><br>");
 
 //testing expressions with variables
 var C = 65;
@@ -20,3 +20,7 @@ function my_first_function() {                                          //defini
 }
 
 //Not too sure how to space out/break the document.writes just yet. Hopefully that will be covered later. If not, I'll research when it arises again.
+
+function press_any_key() {
+    alert("You\'ve pressed a key")
+}
