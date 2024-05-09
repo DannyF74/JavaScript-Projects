@@ -67,7 +67,11 @@ function person(first_name, last_name, age, eye_color, hair_color, weight_kg, he
 var mom = new person("Jane", "Doe", 65, "Brown", "Blonde", 60, 160);
 var dad = new person("Johnny", "Bravo", 60, "Blue", "Brown", 85, 185);
 
-//Here we are going to test out a nested function which is going to add 1 to 9.
+//Here we are going to test out a nested function which is going to add 1 to 9. This function starts by saying we will replace the HTML code within the element with the
+//ID "counting" with the result of another function, Count(). We then define this function within the top level function. This nested function defines the starting_point
+//variable and then defines a second nested function, plus_one(). This second nested function adds 1 to the starting point variable. We then call the plus_one() function
+//and then we return the new result of the starting_point variable to the Count() function. This then allows the first line of the function to replace the HTML with
+//the result of the Count() function.
 function count_function() {
     document.getElementById("counting").innerHTML = Count();
     function Count() {
@@ -77,3 +81,8 @@ function count_function() {
         return starting_point;
     }
 }
+
+//Side note. I couldn't get the above function to work for a while until I worked with Andy. I deliberately put an error in my code from a few steps previous in the
+//LMS to test what would happen if i used a reserved JS word for a variable. I then noticed that none of my functions were working properly. Andy explained how
+//if there are any errors in the JS code, this can cause unpredictability in all of the JS. Once I resolved the Error, everything including this function worked fine.
+//Just a note to remind me that if something is not working as expected, to check in the sources area of the developer tools for any errors.
