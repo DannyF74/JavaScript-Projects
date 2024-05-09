@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Project 7</title>
+        <meta charset="utf-8">
+        <script src="./JS/main.js"></script>
+    </head>
+
+    <body>
+        <h1>Testing Local and Global Variables</h1>
+        <p>Lets test a working function with properly defined variables</p>
+        <button onclick="global_plus_local()">Click Me!</button>
+        <p id="working"></p>
+        <br>
+
+        <!-- INTENTIONALLY BROKEN CODE
+        <p>Lets test a broken function with variables defined locally within a different function</p>
+        <button onclick="intentionally_broken()">Click Me!</button>
+        <p id="broken"></p>
+        <br>
+        -->
+
+        <h2>Testing the Get Hours Method</h2>
+        <p>If you click this button before 12PM, you will be met with a greeting. If you click it after 12PM, nothing will happen.</p>
+        <button onclick="good_morning()">Click Me!</button>
+        <p id="greeting"></p>
+        <br>
+
+        <h2>Comparing two variables and testing IF statements</h2>
+        <p>We have defined two variables. Lets see if x is less than Z</p>
+        <button onclick="compare()">Click me!</button>
+        <p id="compare"></p>
+        <br>
+
+        <h2>Voting Age</h2>
+        <p>Please enter your age to see if you're old enough to vote!</p>
+        <input id="age" value=""/>
+        <p id="How_old_are_you?"></p>
+        <button onclick="voting_age()">Submit</button>
+
+        <h2>Snooty Wealth Check</h2>
+        <p>A member of the high society would like to know if you're eligable for a country club membership. Please enter your savings in dollars below.</p>
+        <input id="wealth" value=""/>
+        <p id="snooty_response"></p>
+        <button onclick="wealth()">Submit</button>
+        <br>
+
+        <h2>Check the Time of Day</h2>
+        <p id="time_of_day"></p>
+        <button onclick="time_function()">Click here to get the time of day!</button>
+    </body>
+</html>
