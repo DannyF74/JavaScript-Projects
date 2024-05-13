@@ -84,3 +84,24 @@ function shoes() {
     }
     document.getElementById("shoes").innerHTML = shoe.description()
 }
+
+//Here we are testing break statements in for loops. Here we are saying if i is equal to 3
+//stop the loop.
+function breaks() {
+    let breaks = ""
+    for (let i = 0; i < 5; i++) {
+        if (i === 3) break;
+        breaks += i + "<br>"
+    }
+    document.getElementById("breaks").innerHTML = breaks;
+}
+
+//Pretty much the same as the above function but instead of stopping the loop, we are just missing out the one loop where i is equal to 3
+function continues() {
+    let continues = ""
+    for (let i = 0; i <= 5; i++) {
+        if (i === 3) continue;
+        continues += i + "<br>";
+    }
+    document.getElementById("continues").innerHTML = continues;
+}
