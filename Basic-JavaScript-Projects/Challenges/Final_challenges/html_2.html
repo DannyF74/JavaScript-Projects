@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Final Challenges 2</title>
+        <meta charset="utf-8">
+        <script src="./JS/main2.js" defer></script>
+        <link rel="stylesheet" href="./CSS/main.css">
+    </head>
+
+    <body>
+        <h1>Testing Forms</h1>
+        <div class="container">
+            <h3>Please enter your information below</h3>
+            <form name="myform" onsubmit="return validateform()" method="post">
+                <label for="fname">First Name: </label>
+                <input type="text" id="fname" placeholder="First Name" value="">
+                <br>
+                <label for="lname">Last Name: </label>
+                <input type="text" id="lname" placeholder="Last Name" value="">
+                <br>
+                <label for="email">Email Address: </label>
+                <input type="text" id="email" placeholder="Email Address" value="">
+                <br>
+                <label for="phone">Phone Number: </label>
+                <input type="text" id="phone" placeholder="Phone Number" value="">
+                <br>
+                <br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </body>
+</html>
