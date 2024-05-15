@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Arrow Functions</title>
+        <meta charset="utf-8">
+        <script src="./JS/main.js" defer></script>
+    </head>
+
+    <body>
+        <h1>Testing Arrow Functions</h1>
+        <p id="result"></p>
+        <script>
+            var car;
+            car = (val) => "These are my favorite car brands: " + val;
+            document.getElementById("result").innerHTML = car("Honda, Ford, Toyota");
+        </script>
+        <br>
+        <h1>Check Ages</h1>
+        <p id="checkages"></p>
+        <button onclick="checkages()">Click me to see if there is someone over 18 in the array</button>
+    </body>
+</html>
