@@ -8,6 +8,8 @@
 
 
     <script>
+        // This shows that when the document is loaded, to target the html tag and append the data within.
+        // This will then add the divs and the h1 and p elements to it.
         $(document).ready(function(){
             $("html").append(
                 "<body>\
@@ -23,6 +25,7 @@
                     </div>\
                 </body>"
             );
+            // These parts are changing the colors of the text and adding effects.
             $("#2").css({"color":"red"});
             $("#3").click(function() {
                 $('h1').hide();
