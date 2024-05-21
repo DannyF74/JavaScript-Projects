@@ -1,0 +1,147 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    opacity: 1;
+    transition: opacity 1s;
+}
+
+body.fade-out {
+    opacity: 0;
+    transition: none;
+}
+
+#vw {
+    font-size: 2vw;
+}
+
+.open-button {
+    background-color: #555;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 23px;
+    right: 28px;
+    width: 280px;
+    z-index: 8;
+}
+
+.form-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+}
+
+.form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: white;
+}
+
+.form-container input[type=text] {
+    width: 100%;
+    padding: 15px 0px;
+    margin: 5px 5px 22px 5px;
+    border: none;
+    background: #f1f1f1;
+}
+
+.form-container input[type=text]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+.form-container .btn {
+    background-color: #04AA6d;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px;
+    opacity: 0.8;
+}
+
+.form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+}
+
+#cancel-btn {
+    background-color: red;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px;
+    opacity: 1;
+}
+
+
+.movingBox {
+    width: 100px;
+    height: 100px;
+    background-color: #04AA6d;
+    position: relative;
+    animation: myMove 2s infinite;
+}
+
+@keyframes myMove {
+    0% {left: 0px;}
+    50% {left: 200px;}
+    100% {left: 0px;}
+}
+
+.imageContainer img {
+    animation: zoomInOut 2s forwards infinite;
+    max-width: 200px;
+}
+
+@keyframes zoomInOut {
+    0% {transform: scale(1);}
+    50% {transform: scale(1.2);}
+    100% {transform: scale(1);}
+}
+
+.sections {
+    height: 900px;
+    width: 100%;
+}
+
+.sections h1 {
+    padding: 50px;
+}
+
+#section1 {
+    background-color: #04AA6d;
+    color: white;
+}
+
+#section2 {
+    background-color: red;
+    color: white;
+}
+
+#slideshow {
+    margin: 50px auto;
+    position: relative;
+    width: 100px;
+    height: 180px;
+    padding: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+}
+
+#slideshow img {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+}
