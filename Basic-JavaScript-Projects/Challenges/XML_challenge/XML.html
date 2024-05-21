@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="XML_Example"></p>
+        <script>
+            var XML_parser, XML_Document;
+
+            //Creates a new text string
+            var Phone = "<phone>" + "<manufacturer>Apple</manufacturer>" + "<model>iPhone 15</model>" + "<color>Black</color>" + "<released>2023</released>" + "<storage>256GB</storage>" + "</phone>";
+
+            //Creates a new XML DOM parser
+            XML_parser = new DOMParser();
+
+            //Creates a new XML DOM object using the text string
+            XML_Document = XML_parser.parseFromString(Phone,'text/xml');
+
+            document.getElementById("XML_Example").innerHTML = XML_Document.getElementsByTagName("model")[0].childNodes[0].nodeValue;
+        </script>
+    </body>
+</html>
