@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <!-- HEAD -->
+    <head>
+        <title>Danny Firth - Portfolio</title>
+        <meta name="viewport" content="width=device-width" />
+        <meta charset="utf-8">
+        <link href="./CSS/stylesheet.css" rel="stylesheet" type="text/css">
+        <link rel="icon" type="image/png" sizes="32x32" href="./img/Favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./img/Favicons/favicon-16x16.png">
+    </head>
+    <!-- END HEAD -->
+
+    <!-- BODY -->
+    <body class="background">
+
+        <!-- NAV -->
+        <div class="navbar">
+            <a class="active" href="#home">Home</a>
+            <a href="#slideshow">Slideshow</a>
+            <a href="#about">About</a>
+            <a href="#github">Github</a>
+            <!-- Onclick and ondblclick functions added to open and close the contact form -->
+            <a onclick="openForm()" ondblclick="closeForm()" class="contact">Contact</a>
+        </div>
+        <!-- END NAV -->
+
+        <!-- HEADING VIDEO -->
+        <div id="home">
+            <video autoplay muted loop id="coding-video">
+                <source src="./mov/title-background.mp4" type="video/mp4">
+                Your browser does not support this movie file
+            </video>
+        </div>
+        <!--END HEADING VIDEO-->
+
+
+        <!--VIDEO TEXT-->
+        <div class="video-text">
+            <h1 class="white-text">Danny Firth's Portfolio</h1>
+            <strong>
+                <p class="centered">
+                    <q>Every great developer you know got there by solving problems they were unqualified to solve until they actually did it.</q>
+                    <br>-Patrick McKenzie, Software Engineer
+                    <br>
+                    <br>My name is Danny Firth. Welcome to my portfolio website. Here I will tell you about my background and experience.
+                    <br>
+                    <br>Thanks for visiting!
+                </p>
+            </strong>
+        </div>
+        <!--END VIDEO TEXT-->
+
+        <!-- SLIDESHOW -->
+        <div id="slideshow">
+            <div id="slideshow_background">
+                <div id="slideshow_container">
+                    <!-- Slide 1 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="slideshow_images" src="./img/Danny-Firth-large.jpg" alt="Danny Firth">
+                        <div class="text">I'm available to assist on your project</div>
+                    </div>
+                    <!-- Slide 2 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="slideshow_images" src="./img/HTML_CSS_and_JavaScript.jpeg" alt="HTML, CSS and JS logos">
+                        <div class="text">I am a full-stack software developer,<br> trained in:<br>HTML, CSS, JavaScript,</div>
+                    </div>
+                    <!-- Slide 3 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="slideshow_images" src="./img/Python.png" alt="Python Logo">
+                        <div class="text">the popular programming language Python,</div>
+                    </div>
+                    <!-- Slide 4 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="slideshow_images" src="./img/C_Sharp_and_Dot_NET.png" alt="C# Logo">
+                        <div class="text">C#, .NET Framework, ASP.NET, MVC, </div>
+                    </div>
+                    <!-- Slide 5 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="slideshow_images" src="./img/SQL_and_Database.jpg" alt="SQL Logo">
+                        <div class="text">back end development, databases and SQL.</div>
+                    </div>
+                    <!-- Slide 6 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="slideshow_images" src="./img/coding.jpg" alt="Coding Image">
+                        <div class="text"><a class="white-text contact" onclick="openForm()">Contact me now!</a></div>
+                    </div>
+                    <!-- Next and prev buttons -->
+                    <a class="previous" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br>
+
+                <div style="text-align: center">
+                    <span class="dot" onclick="currentSlide(1)" ></span>
+                    <span class="dot" onclick="currentSlide(2)" ></span>
+                    <span class="dot" onclick="currentSlide(3)" ></span>
+                    <span class="dot" onclick="currentSlide(4)" ></span>
+                    <span class="dot" onclick="currentSlide(5)" ></span>
+                    <span class="dot" onclick="currentSlide(6)" ></span>
+                </div>
+            </div>
+        </div>
+        <!-- END SLIDESHOW -->
+
+
+        <!--ABOUT-->
+        <div class="row" id="about">
+
+            <!--LEFT COLUMN-->
+            <div class="column-2">
+                <img src="./img/Danny-Firth.JPG" alt="Danny Firth">
+            </div>
+            <!--END LEFT COLUMN-->
+            <!--RIGHT COLUMN-->
+            <div class="column-1">
+                <h1>About Me</h1>
+                <p>
+                    I am a software developer who loves to code. I am a Brit who moved to Portland, OR in the spring of 2024. I am also an avid sports fan. You can find me watching or playing golf, football, basketball, soccer (the real football!), F1, you name it!
+                    <br>
+                    <br>I am a graduate of <a href="https://learncodinganywhere.com">The Tech Academy</a>’s Software Developer Boot Camp, and trained and experienced in the following web and programming languages: HTML, CSS, JavaScript, SQL, C# and more.
+                    <br>
+                    <br>I am a full-stack developer and would love to work with you on your project. <a href="#contact">Contact</a> me below!
+                </p>
+            </div>
+            <!--END RIGHT COLUMN-->
+        </div>
+        <!--END ABOUT-->
+
+        <!--GITHUB-->
+        <div class="row" id="github">
+            <!--LEFT COLUMN-->
+            <div class="column-1">
+                <h1>Github</h1>
+                <p>You can view my coding projects on my GitHub profile here:
+                    <br>
+                    <p class="centered"><a href="https://github.com/DannyF74" target="_blank">Danny Firth's Github</a></p>
+                </p>
+            </div>
+            <!--END LEFT COLUMN-->
+
+            <!--RIGHT COLUMN-->
+            <div class="column-2">
+                <a href="https://github.com/DannyF74" target="_blank" ><img id="invert" src="./img/Github.png" alt="Github"></a>
+            </div>
+            <!--END RIGHT COLUMN-->
+        </div>
+        <!--END GITHUB--> 
+
+
+        <!--CONTACT-->
+        <div class="row" id="contact">
+            <button onclick="openForm()" class="Pop_Up_Button">CONTACT</button>
+            <div class="form-popup" id="myForm">
+                <form action="https://formspree.io/f/xpzvbnpy" method="POST" class="form-container">
+                    <h1>Contact</h1>
+                    <label for="name"><b>Name</b></label>
+                        <input type="text" placeholder="Please enter your name" name="name" required>
+                    <label for="phone"><b>Phone Number</b></label>
+                        <input type="text" placeholder="Please enter your phone number" name="phone">
+                    <label for="email"><b>Email Address</b></label>
+                        <input type="text" placeholder="Please enter your email address" name="email">
+                    <label for="message"><b>Message</b></label>
+                        <input type="text" placeholder="Please enter your message" name="message">
+                        
+                        <button type="submit" class="btn">SUBMIT</button>
+                        <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
+                </form>
+            </div>
+        </div>
+        <!--END CONTACT-->
+
+        <!--FOOTER-->
+        <footer>
+            <p>Made by Danny Firth. Graduate of <a href="https://learncodinganywhere.com">The Tech Academy</a>.</p>
+        </footer>
+        <script src="./JS/main.js"></script>
+    </body>
+</html>
